@@ -1,8 +1,8 @@
 # Maven
-bin/
-MyDerbyDB/
-.settings/
-target/
+*bin/
+*MyDerbyDB/
+*.settings/
+*target/
 
 # Token
 .git_token
