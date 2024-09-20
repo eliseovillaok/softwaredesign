@@ -1,3 +1,9 @@
+# Maven
+bin/
+MyDerbyDB/
+.settings/
+target/
+
 # Token
 .git_token
 # Metadata
