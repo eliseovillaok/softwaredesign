@@ -1,16 +1,14 @@
-package example1;
+package factoryMethod;
 
 public class SMSFactory extends NotificationFactory {
 	private int number;
 	private String message;
-	
-	
+
 	public SMSFactory(int number, String message) {
 		super();
 		this.number = number;
 		this.message = message;
 	}
-
 
 	@Override
 	public Notification createNotification() {

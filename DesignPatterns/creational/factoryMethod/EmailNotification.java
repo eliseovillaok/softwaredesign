@@ -1,10 +1,10 @@
-package example1;
+package factoryMethod;
 
 public class EmailNotification implements Notification {
 	private String recipient;
 	private String subject;
 	private String body;
-	
+
 	public EmailNotification(String recipient, String subject, String body) {
 		super();
 		this.recipient = recipient;
@@ -14,7 +14,8 @@ public class EmailNotification implements Notification {
 
 	@Override
 	public void send() {
-		System.out.println("// Email notification // \n Recipient: "+recipient+"; Subject: "+subject+"; Body: "+body);
+		System.out.println(
+				"// Email notification // \n Recipient: " + recipient + "; Subject: " + subject + "; Body: " + body);
 
 	}
 

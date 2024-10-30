@@ -1,10 +1,10 @@
-package example1;
+package factoryMethod;
 
 public class PushNotification implements Notification {
 	private String token;
 	private String title;
 	private String message;
-	
+
 	public PushNotification(String token, String title, String message) {
 		super();
 		this.token = token;
@@ -14,7 +14,8 @@ public class PushNotification implements Notification {
 
 	@Override
 	public void send() {
-		System.out.println("// Push notification // \n Title '"+title+"'; Message '"+message+ "' to Token: "+token);
+		System.out.println(
+				"// Push notification // \n Title '" + title + "'; Message '" + message + "' to Token: " + token);
 	}
 
 }

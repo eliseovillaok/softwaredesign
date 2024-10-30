@@ -1,11 +1,10 @@
-package example1;
+package factoryMethod;
 
 public class EmailFactory extends NotificationFactory {
 	private String recipient;
 	private String subject;
 	private String body;
-	
-	
+
 	public EmailFactory(String recipient, String subject, String body) {
 		super();
 		this.recipient = recipient;
@@ -13,10 +12,9 @@ public class EmailFactory extends NotificationFactory {
 		this.body = body;
 	}
 
-
 	@Override
 	public Notification createNotification() {
-		return new EmailNotification(recipient,subject,body);
+		return new EmailNotification(recipient, subject, body);
 	}
 
 }

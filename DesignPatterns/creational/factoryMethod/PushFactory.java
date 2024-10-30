@@ -1,18 +1,16 @@
-package example1;
+package factoryMethod;
 
 public class PushFactory extends NotificationFactory {
 	private String token;
 	private String title;
 	private String message;
-	
-	
+
 	public PushFactory(String token, String title, String message) {
 		super();
 		this.token = token;
 		this.title = title;
 		this.message = message;
 	}
-
 
 	@Override
 	public Notification createNotification() {
